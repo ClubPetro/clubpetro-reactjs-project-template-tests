@@ -15,7 +15,7 @@ const Manager: React.FC<ManagerProps> = () => {
   };
 
   return (
-    <Container>
+    <Container data-test="pages-manager">
       <Title>Manager</Title>
       <Card>
         <Forms.Person ref={formPersonRef} submitAction={submitAction} />

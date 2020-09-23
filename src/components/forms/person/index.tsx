@@ -44,8 +44,9 @@ const Person: React.ForwardRefRenderFunction<formExposed, PersonProps> = (
   });
 
   return (
-    <Form {...rest} onSubmit={formik.handleSubmit}>
+    <Form data-test="form-person" {...rest} onSubmit={formik.handleSubmit}>
       <Input
+        data-test="fullName"
         id="fullName"
         type="text"
         placeholder="Nome completo"
@@ -55,6 +56,7 @@ const Person: React.ForwardRefRenderFunction<formExposed, PersonProps> = (
       />
 
       <Input
+        data-test="document"
         id="document"
         type="text"
         placeholder="CPF"

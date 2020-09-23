@@ -15,7 +15,7 @@ const Admin: React.FC<AdminProps> = () => {
   };
 
   return (
-    <Container>
+    <Container data-test="pages-admin">
       <Title>Admin</Title>
       <Card>
         <Forms.Person ref={formPersonRef} submitAction={submitAction} />
