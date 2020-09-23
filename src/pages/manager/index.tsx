@@ -9,7 +9,7 @@ const Manager: React.FC<ManagerProps> = () => {
   const formPersonRef = useRef<formExposed>(null);
 
   const submitAction = (values: formValues) => {
-    // REGRA DE NEGOCIO PARA MANAGER.
+    // REGRA DE NEGOCIO PARA MANAGER
 
     console.log(values);
   };
