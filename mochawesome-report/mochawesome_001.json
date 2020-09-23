@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-23T14:56:03.292Z",
+    "end": "2020-09-23T14:56:04.331Z",
+    "duration": 1039,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "28314526-f4d3-4787-8676-de16af91e243",
+      "title": "",
+      "fullFile": "cypress/integration/admin.js",
+      "file": "cypress/integration/admin.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ee3890cf-6881-429b-8deb-fdda4209480f",
+          "title": "Admin page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Interacao na tela",
+              "fullTitle": "Admin page Interacao na tela",
+              "timedOut": null,
+              "duration": 797,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"[data-test=fullName]\").type(\"Henrique Weiand\");\ncy.get(\"[data-test=document]\").type(\"99999999999\");\ncy.get(\"[data-test=pages-admin] button\").click();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/Users/henrique/Documents/git/clubpetro/medium-reactjs-useimperativehandle/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Admin page`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/Users/henrique/Documents/git/clubpetro/medium-reactjs-useimperativehandle/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Admin page`\n    at http://localhost:59964/__cypress/runner/cypress_runner.js:157790:25\n    at visitFailedByErr (http://localhost:59964/__cypress/runner/cypress_runner.js:157160:12)\n    at http://localhost:59964/__cypress/runner/cypress_runner.js:157770:13\n    at tryCatcher (http://localhost:59964/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:59964/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:59964/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:59964/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:59964/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:59964/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:59964/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:59964/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:59964/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:59964/__cypress/tests?p=cypress/integration/admin.js:102:8)",
+                "diff": null
+              },
+              "uuid": "cd51e364-847c-4cd2-a537-2abcb346ae89",
+              "parentUUID": "ee3890cf-6881-429b-8deb-fdda4209480f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cd51e364-847c-4cd2-a537-2abcb346ae89"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 797,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

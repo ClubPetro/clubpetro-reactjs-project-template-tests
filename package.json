@@ -30,7 +30,7 @@
     "cypress": "cypress open",
     "test:chrome": "cypress run --browser chrome",
     "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
-    "generate:report": "marge index.json --reportDir cypress --assetsDir cypress/assets --reportPageTitle index.html"
+    "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "eslintConfig": {
     "extends": "react-app"
