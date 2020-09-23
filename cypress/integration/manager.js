@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("Admin page", () => {
+describe("Manager page", () => {
   beforeEach(() => {
     cy.visit("/manager");
   });
@@ -9,6 +9,6 @@ describe("Admin page", () => {
     cy.get("[data-test=fullName]").type("Henrique Weiand");
     cy.get("[data-test=document]").type("88888888888");
 
-    cy.get("[data-test=pages-admin] button").click();
+    cy.get("[data-test=pages-manager] button").click();
   });
 });
