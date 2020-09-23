@@ -17,11 +17,6 @@ jobs:
 
       - name: Install cypress and verify
         run: |
-          npm i
-          npm run start
-
-      - name: Install cypress and verify
-        run: |
           npm ci
           $(npm bin)/cypress verify
 
