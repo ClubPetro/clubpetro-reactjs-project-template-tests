@@ -1,10 +1,4 @@
 {
   "projectId": "zzv858",
-  "reporter": "mochawesome",
-  "reporterOptions": {
-    "overwrite": false,
-    "html": false,
-    "json": true
-  },
-  "baseUrl": "http://localhost:3000"
+  "baseUrl": "https://clubpetro-medium-reactjs-useimperativehandle.netlify.app/"
 }
