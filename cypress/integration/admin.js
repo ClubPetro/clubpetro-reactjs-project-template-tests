@@ -6,7 +6,9 @@ describe("Admin page", () => {
   });
 
   it("Interacao na tela", () => {
-    cy.get("input[data-test=fullName]").type("Henrique Weiand");
-    // cy.get("[data-test=document]").type("99999999999");
+    cy.get("[data-test=fullName]").type("Henrique Weiand");
+    cy.get("[data-test=document]").type("99999999999");
+
+    cy.get("[data-test=pages-admin] button").click();
   });
 });
