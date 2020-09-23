@@ -1,4 +1,4 @@
-## Medium-reactjs-useimperativehandle
+# Medium-reactjs-useimperativehandle [![Cypress Dashboard](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/#/projects/zzv858/runs)
 
 https://clubpetro-medium-reactjs-useimperativehandle.netlify.app
 
