@@ -3,3 +3,13 @@
 https://clubpetro-medium-reactjs-useimperativehandle.netlify.app
 
 Exemplo basico de uso do recurso useImperativeHandle aplicado em um form compartilhado
+
+### Recursos adicionados
+
+✅ - useImperativeHandle;
+
+✅ - adicionado cypress para validação e2e;
+
+✅ - adicionado lazy load;
+
+✅ - adicionado hooks para otimização;
