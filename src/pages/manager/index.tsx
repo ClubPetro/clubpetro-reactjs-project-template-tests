@@ -1,6 +1,6 @@
 import { Button, Forms } from "components";
 import { formExposed, formValues } from "components/forms/person/types";
-import React, { useRef } from "react";
+import React, { useRef, useCallback } from "react";
 import { Container, Title, Link } from "../styles";
 import { Card } from "./styles";
 import { ManagerProps } from "./types";
@@ -8,11 +8,11 @@ import { ManagerProps } from "./types";
 const Manager: React.FC<ManagerProps> = () => {
   const formPersonRef = useRef<formExposed>(null);
 
-  const submitAction = (values: formValues) => {
+  const submitAction = useCallback((values: formValues) => {
     // REGRA DE NEGOCIO PARA MANAGER.
 
     console.log(values);
-  };
+  }, []);
 
   return (
     <Container data-test="pages-manager">
