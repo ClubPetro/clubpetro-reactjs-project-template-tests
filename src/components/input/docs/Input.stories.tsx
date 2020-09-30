@@ -1,7 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { GlobalStyle } from "styles";
-
+import { Theme } from "components";
 import Input from "../index";
 import { InputProps } from "../types";
 
@@ -19,10 +18,9 @@ export default {
 } as Meta;
 
 const Template: Story<InputProps> = (args) => (
-  <>
-    <GlobalStyle />
+  <Theme>
     <Input {...args} />
-  </>
+  </Theme>
 );
 
 export const DefaultInput = Template.bind({});
