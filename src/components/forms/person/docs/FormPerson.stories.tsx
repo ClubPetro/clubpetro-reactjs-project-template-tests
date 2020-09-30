@@ -1,6 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { GlobalStyle } from "styles";
+import { Theme } from "components";
 
 import Person from "../index";
 import { PersonProps } from "../types";
@@ -21,10 +21,9 @@ export default {
 } as Meta;
 
 const Template: Story<PersonProps> = (args) => (
-  <>
-    <GlobalStyle />
+  <Theme>
     <Person {...args} />
-  </>
+  </Theme>
 );
 
 export const DefaultPerson = Template.bind({});

@@ -3,7 +3,10 @@
     "paths": {
       "pages/*": ["./pages/*"],
       "components/*": ["./components/*"],
-      "styles/*": ["./styles/*"]
+      "styles/*": ["./styles/*"],
+      "contexts/*": ["./contexts/*"],
+      "utils/*": ["./utils/*"],
+      "routes/*": ["./routes/*"]
     }
   }
 }

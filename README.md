@@ -6,7 +6,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6fab0a6f-df32-4ead-9c43-01defb3f6ae1/deploy-status)](https://app.netlify.com/sites/reactjs-project-template-tests/deploys)
 
-https://reactjs-project-template-tests.netlify.app/
+Build site: https://reactjs-project-template-tests.netlify.app/
+Build storybook: https://reactjs-project-template-tests-storybook.netlify.app
 
 Exemplo basico de uso do recurso useImperativeHandle aplicado em um form compartilhado
 

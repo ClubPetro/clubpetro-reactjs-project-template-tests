@@ -1,7 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { GlobalStyle } from "styles";
-
+import { Theme } from "components";
 import Button from "../index";
 import { ButtonProps } from "../types";
 
@@ -12,10 +11,9 @@ export default {
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) => (
-  <>
-    <GlobalStyle />
+  <Theme>
     <Button {...args}>Click</Button>
-  </>
+  </Theme>
 );
 
 export const DefaultButton = Template.bind({});
