@@ -2,9 +2,13 @@ import React, { PropsWithChildren } from "react";
 import { Container, Input as InputBase, Error } from "./styles";
 import { InputProps } from "./types";
 
-const Input: React.FC<PropsWithChildren<InputProps>> = ({ error, ...rest }) => {
+const Input: React.FC<PropsWithChildren<InputProps>> = ({
+  error,
+  className = "",
+  ...rest
+}) => {
   return (
-    <Container>
+    <Container className={className}>
       <InputBase {...rest} />
       {error && <Error>{error}</Error>}
     </Container>

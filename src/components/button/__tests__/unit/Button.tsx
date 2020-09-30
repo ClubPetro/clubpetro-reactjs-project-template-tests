@@ -3,7 +3,7 @@ import React from "react";
 import Button from "../../index";
 
 describe("Button", () => {
-  it("should render a span when neither onClick or href us supplied", () => {
+  it("should render a button", () => {
     const { getByTestId } = render(
       <Button data-testid="button-test">Click</Button>
     );
@@ -11,13 +11,13 @@ describe("Button", () => {
     expect(getByTestId("button-test").tagName).toEqual("BUTTON");
   });
 
-  it("should render disabled button", () => {
+  it("should render button with name", () => {
     const { getByTestId } = render(
       <Button data-testid="button-test" onClick={() => {}} name="name-here">
         Click
       </Button>
     );
-    const element = getByTestId("button-test");
+    const element: HTMLButtonElement = getByTestId("button-test");
 
     expect(element.tagName).toEqual("BUTTON");
     expect(element.getAttribute("name")).toEqual("name-here");
@@ -35,7 +35,7 @@ describe("Button", () => {
       </Button>
     );
 
-    const button: HTMLElement = getByTestId("button-test");
+    const button: HTMLButtonElement = getByTestId("button-test");
 
     fireEvent.click(button);
 
