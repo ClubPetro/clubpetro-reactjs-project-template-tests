@@ -3,6 +3,7 @@ import React, { forwardRef, useCallback, useImperativeHandle } from "react";
 import { Form } from "./styles";
 import { validationSchema } from "./validationSchema";
 import { PersonProps, formExposed } from "./types";
+
 import { Input } from "components";
 
 const Person: React.ForwardRefRenderFunction<formExposed, PersonProps> = (
